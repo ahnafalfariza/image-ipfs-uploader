@@ -75,6 +75,7 @@ export default function Home() {
             multiple
             listType="picture"
             style={{ marginTop: '16px' }}
+            beforeUpload={() => false}
             onChange={(e) => setFiles(e.fileList)}
           >
             <p className="ant-upload-drag-icon">
